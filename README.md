@@ -1,6 +1,6 @@
 # 🛍️ GenZWay - Modern Full Stack E-commerce Platform
 
-![GenZWay Home Screen](./frontend/public/Home.png)
+![GenZWay Home Screen](./genzway/frontend/public/Home.png)
 
 ### 🚀 Live Demo
 **Frontend (Netlify):** [https://superb-hummingbird-addb10.netlify.app](https://superb-hummingbird-addb10.netlify.app)  
