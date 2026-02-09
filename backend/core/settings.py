@@ -145,6 +145,7 @@ AUTH_USER_MODEL = 'accounts.User'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://superb-hummingbird-addb10.netlify.app",
+    "https://genzway-ecommerce.vercel.app",
 ]
 
 STRIPE_PUBLIC_KEY = 'pk_test_51SyZdfB1se9v2QXuXfxywNngEIL9C8wxgjH5s5TpiYP1ePcV5bYkCvzFTOOkrxKnXyTZvmTO8Lbe8dccxJlD1NgW00lGf6Uj5t'
