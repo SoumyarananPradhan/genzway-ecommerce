@@ -1,7 +1,6 @@
 # 🛍️ GenZWay - Modern Full Stack E-commerce Platform
 
-![GenZWay Banner](https://via.placeholder.com/1200x500?text=GenZWay+E-commerce+Platform)
-> *Note: Replace the link above with a screenshot of your actual homepage.*
+![GenZWay Home Screen](./frontend/public/Home.png)
 
 ### 🚀 Live Demo
 **Frontend (Netlify):** [https://superb-hummingbird-addb10.netlify.app](https://superb-hummingbird-addb10.netlify.app)  
