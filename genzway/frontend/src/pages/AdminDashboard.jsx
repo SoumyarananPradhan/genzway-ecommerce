@@ -14,7 +14,7 @@ const AdminDashboard = () => {
     }
 
     // Fetch Admin Stats
-    axios.get('http://127.0.0.1:8000/api/admin/stats/', {
+    axios.get('https://genzway-backend.onrender.com/api/admin/stats/', {
         headers: { 'Authorization': `Basic ${token}` }
     })
     .then(res => setStats(res.data))
@@ -34,7 +34,7 @@ const AdminDashboard = () => {
   const handleStatusChange = async (orderId, newStatus) => {
     const token = localStorage.getItem('token')
     try {
-        await axios.put(`http://127.0.0.1:8000/api/admin/orders/${orderId}/update/`, 
+        await axios.put(`https://genzway-backend.onrender.com/api/admin/orders/${orderId}/update/`, 
             { status: newStatus },
             { headers: { 'Authorization': `Basic ${token}` } }
         )

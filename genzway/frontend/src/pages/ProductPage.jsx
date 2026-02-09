@@ -10,7 +10,7 @@ const ProductPage = () => {
   const { addToCart } = useCart()
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/products/${slug}/`)
+    axios.get(`https://genzway-backend.onrender.com/api/products/${slug}/`)
       .then(res => setProduct(res.data))
       .catch(err => console.error(err))
   }, [slug])

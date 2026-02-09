@@ -31,7 +31,7 @@ const CheckoutForm = () => {
         try {
             // A. Ask Backend for a "Payment Intent" (Client Secret)
             const { data: { clientSecret } } = await axios.post(
-                'http://127.0.0.1:8000/api/create-payment-intent/',
+                'https://genzway-backend.onrender.com/api/create-payment-intent/',
                 { cartItems, currency }, 
                 { headers: { 'Authorization': `Basic ${token}` } }
             )
@@ -49,7 +49,7 @@ const CheckoutForm = () => {
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
                     // C. Payment Success! Now Save Order in DB
-                    await axios.post('http://127.0.0.1:8000/api/orders/add/', 
+                    await axios.post('https://genzway-backend.onrender.com/api/orders/add/', 
                         { cartItems, total_price: totalPrice }, 
                         { headers: { 'Authorization': `Basic ${token}` } }
                     )

@@ -13,7 +13,7 @@ const ProfilePage = () => {
         return
     }
 
-    axios.get('http://127.0.0.1:8000/api/orders/my-orders/', {
+    axios.get('https://genzway-backend.onrender.com/api/orders/my-orders/', {
         headers: { 'Authorization': `Basic ${token}` }
     })
     .then(res => setOrders(res.data))

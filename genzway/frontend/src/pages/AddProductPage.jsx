@@ -15,7 +15,7 @@ const AddProductPage = () => {
 
   // Fetch Categories so we can select one
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/categories/')
+    axios.get('https://genzway-backend.onrender.com/api/categories/')
       .then(res => setCategories(res.data))
       .catch(err => console.error(err))
   }, [])
@@ -44,7 +44,7 @@ const AddProductPage = () => {
     }
 
     try {
-        await axios.post('http://127.0.0.1:8000/api/admin/products/add/', formData, {
+        await axios.post('https://genzway-backend.onrender.com/api/admin/products/add/', formData, {
             headers: {
                 'Authorization': `Basic ${token}`
                 // DO NOT add 'Content-Type': 'multipart/form-data' here! 

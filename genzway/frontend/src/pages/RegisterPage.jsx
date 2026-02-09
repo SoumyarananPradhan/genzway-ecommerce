@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault()
     try {
-        await axios.post('http://127.0.0.1:8000/api/accounts/register/', {
+        await axios.post('https://genzway-backend.onrender.com/api/accounts/register/', {
             email,
             name,
             password
