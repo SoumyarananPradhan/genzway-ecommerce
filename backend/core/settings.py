@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
     'rest_framework',
     'corsheaders',
     'store',
@@ -146,3 +149,13 @@ CORS_ALLOWED_ORIGINS = [
 
 STRIPE_PUBLIC_KEY = 'pk_test_51SyZdfB1se9v2QXuXfxywNngEIL9C8wxgjH5s5TpiYP1ePcV5bYkCvzFTOOkrxKnXyTZvmTO8Lbe8dccxJlD1NgW00lGf6Uj5t'
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+
+# Cloudinary Configuration
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dmsfilokg',
+    'API_KEY': '917798369345967 ',
+    'API_SECRET': 'Pppq3W00T8gdkVMh4awf5Z-wNlc',
+}
+
+# Tell Django to use Cloudinary for uploaded media
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
